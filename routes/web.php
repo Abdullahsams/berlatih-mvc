@@ -13,6 +13,6 @@
 
 Route::get('/', 'HomeController@Home');
 
-Route::get('/register', 'AuthController@');
+Route::get('/register', 'AuthController@register');
 
 Route::post('/welcome', 'AuthController@welcome');
