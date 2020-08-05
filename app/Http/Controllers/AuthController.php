@@ -13,7 +13,7 @@ class AuthController extends Controller
   
   public function welcome(Request, $request) 
   {
-    $nama = $request["$fname, $lname"];
-    return view('welcome')
+    $nama = $request->fname." ".$request->lname;
+    return view('welcome',compact('nama'));
   }
 }
