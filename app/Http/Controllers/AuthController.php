@@ -11,7 +11,7 @@ class AuthController extends Controller
     return view('form');
   }
   
-  public function welcome(Request, $request) 
+  public function welcome(Request $request) 
   {
     $nama = $request->fname." ".$request->lname;
     return view('welcome',compact('nama'));

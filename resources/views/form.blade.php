@@ -8,7 +8,8 @@
     <h2>Buat Account Baru!</h2>
     <h4>Sign Up Form</h4>
    
-    <form action="/welcome">
+    <form action="/welcome" method="POST">
+      @csrf
       <label for="fname">First name:</label><br><br>
       <input type="text" id="fname" name="fname" value=""><br><br>
       <label for="lname">Last name:</label><br><br>
@@ -42,7 +43,7 @@
       <textarea id="bio" name="bio" rows="14" cols="40">
       </textarea><br><br>
       
-      <input type="submit" value="Sign Up">
+      <input type="submit" name="submit" value="Sign Up">
     </form>
   </body>
 </html>
